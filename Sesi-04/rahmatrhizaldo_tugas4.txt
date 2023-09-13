@@ -1,0 +1,20 @@
+Algoritma hitung luas lingkaran:
+1. mulai
+2. deklarasi variabel phi dengan nilai = 3.14
+   deklarasi variabel jari2
+   deklarasi variabel luasLingkaran
+3. masukkan nilai jari2
+4. hitung luasLingkaran = phi*r^2
+5. cetak luasLingkaran
+6. selesai
+
+
+Algoritma hitung keliling lingkaran:
+1. mulai
+2. deklarasi variabel phi dengan nilai = 3.14
+   deklarasi variabel jari2
+   deklarasi variabel kelilingLingkaran
+3. masukkan nilai jari2
+4. hitung kelilingLingkaran = 2*phi*r
+5. cetak kelilingLingkaran
+6. selesai
