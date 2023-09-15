@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Looping dengan Pesan dan Jumlah Iterasi</title>
+	</head>
+	<body>
+		<label for="pesan">Pesan:</label>
+		<input type="text" id="pesan" /> <br />
+
+		<label for="jumlah">Berapa kali:</label>
+		<input type="number" id="jumlah" /> <br />
+
+		<button onclick="loop()">Cetak!</button>
+
+		<ol id="hasilLoop"></ol>
+
+		<script>
+			function loop() {
+				var pesan = document.getElementById("pesan").value;
+				var jumlah = parseInt(document.getElementById("jumlah").value);
+				var hasil = "";
+
+				var hasilList = document.getElementById("hasilLoop");
+
+				hasilList.innerHTML = "";
+
+				for (var i = 0; i < jumlah; i++) {
+					var listItem = document.createElement("li");
+					listItem.textContent = pesan;
+					hasilList.appendChild(listItem);
+				}
+			}
+		</script>
+	</body>
+</html>
