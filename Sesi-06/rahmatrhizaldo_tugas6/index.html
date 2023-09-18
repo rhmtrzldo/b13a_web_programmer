@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Manipulasi DOM</title>
+	</head>
+	<body>
+		<p class="paragraf">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde architecto
+			consectetur earum dolorem nam? Quisquam voluptate atque esse tenetur. Quod
+			enim eveniet eaque magni nesciunt facilis libero accusantium veritatis
+			itaque!
+		</p>
+
+		<p class="paragraf">
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio
+			ullam aspernatur omnis iusto, labore quis veritatis consequuntur nostrum
+			vel laudantium tenetur culpa assumenda vero sit eaque repellat dolores
+			nulla.
+		</p>
+		<p class="paragraf">
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis facilis
+			corrupti veritatis, delectus pariatur asperiores ratione earum explicabo
+			quia dolores illo doloribus aperiam aliquid rerum iste, nemo error
+			sapiente eligendi.
+		</p>
+
+		<script>
+			var warna = document.getElementsByClassName("paragraf");
+			var waktu = setInterval(() => {
+				warna[0].style.color = "red";
+				warna[1].style.color = "green";
+				warna[2].style.color = "blue";
+				setTimeout(function () {
+					warna[0].style.color = "black";
+					warna[1].style.color = "black";
+					warna[2].style.color = "black";
+				}, 500);
+			}, 900);
+
+			setTimeout(() => {
+				clearInterval(waktu);
+				document.body.style.backgroundColor = "white";
+				var warna = document.getElementsByTagName("warna")[0];
+				warna.style.color = "black";
+			}, 5000);
+		</script>
+	</body>
+</html>
